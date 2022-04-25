@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <ImageView
+        android:layout_above="@+id/weight"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="0dp"
+        android:layout_toRightOf="@+id/indoname"
+        android:src="@drawable/kobokanaer" />
+    <TextView
+        android:layout_marginStart="20dp"
+        android:id="@+id/indoname"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:text=" Kobokan Aeru"
+        android:textColor="@color/red"
+        android:textSize="28dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <TextView
+        android:id="@+id/japanname"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="right"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:text="こぼ・かなえる"
+        android:layout_below="@+id/indoname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/red"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/japanname"
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:text="---"
+        android:textSize="5dp"
+        android:gravity="center"
+        android:background="@color/red"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:id="@+id/agetitle"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lines"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="Age"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/ageanswer"
+        android:layout_below="@+id/agetitle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:gravity="left"
+        android:text="She said that she was legal"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_toRightOf="@+id/agetitle"
+        android:layout_below="@+id/lines"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="Weight"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weightanswer"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/weight"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/ageanswer"
+        android:gravity="left"
+        android:text="40 mg"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/birthdaytitle"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ageanswer"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="Birthday"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/birthdayanswer"
+        android:layout_below="@+id/birthdaytitle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:gravity="left"
+        android:text="12 December"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/oshimark"
+        android:layout_toRightOf="@+id/birthdaytitle"
+        android:layout_below="@+id/weightanswer"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="Oshi mark"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/oshiicon"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/oshimark"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/ageanswer"
+        android:gravity="left"
+        android:text="☔"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/birthdayanswer"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="height"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/heightanswer"
+        android:layout_below="@+id/height"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:gravity="left"
+        android:text="150 cm"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_toRightOf="@+id/height"
+        android:layout_below="@+id/oshiicon"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="Languages"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/languages"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/language"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/heightanswer"
+        android:gravity="left"
+        android:text="Bahasa Indonesia"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/languages3"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/languages"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/heightanswer"
+        android:gravity="left"
+        android:text="English"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/languages4"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/languages3"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/heightanswer"
+        android:gravity="left"
+        android:text="日本語"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/languages5"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/languages4"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/heightanswer"
+        android:gravity="left"
+        android:text="HTML"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/languages6"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/languages5"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/heightanswer"
+        android:gravity="left"
+        android:text="CSS"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/languages7"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/languages6"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/heightanswer"
+        android:gravity="left"
+        android:text="JavaScript"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloud"
+        android:layout_below="@+id/heightanswer" />
+
+        <ImageView
+            android:id="@+id/cloud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/languages6"
+            android:src="@drawable/cloud" />
+
+    </RelativeLayout>
+
+</ScrollView>
