@@ -12,13 +12,14 @@
         android:id="@+id/relative"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-    <ImageView
-        android:layout_above="@+id/weight"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="0dp"
-        android:layout_toRightOf="@+id/indoname"
-        android:src="@drawable/kobokanaer" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/weight"
+            android:layout_marginStart="0dp"
+            android:layout_toRightOf="@+id/indoname"
+            android:src="@drawable/kobokanaer" />
     <TextView
         android:layout_marginStart="20dp"
         android:id="@+id/indoname"
@@ -155,18 +156,18 @@
             android:textColor="@color/black"
             android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/height"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/birthdayanswer"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:gravity="left"
-        android:text="height"
-        android:textColor="@color/red"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/birthdayanswer"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="height"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/heightanswer"
@@ -381,6 +382,112 @@
                 android:textSize="5dp" />
 
 
+            <RelativeLayout
+                android:background="@color/darkblue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imgbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="410dp"
+                    android:src="@drawable/imgbg2" />
+                <TextView
+                    android:id="@+id/likes"
+                    android:layout_below="@id/imgbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="LIKES"
+                    android:textColor="@color/gold"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/meatball"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/imgbg"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/meatball"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.141"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/matcha"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/imgbg"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="71dp"
+                    android:layout_marginTop="51dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toRightOf="@+id/meatball"
+                    android:src="@drawable/matcha"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.141"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ghost"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@id/meatball"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ghost" />
+
+                <ImageView
+                    android:id="@+id/basketball"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_below="@+id/matcha"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toRightOf="@+id/ghost"
+                    android:src="@drawable/basketball"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.141"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/cloudd"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@id/ghost"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cloudd" />
+
+                <ImageView
+                    android:id="@+id/music"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_below="@+id/basketball"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toRightOf="@+id/cloudd"
+                    android:src="@drawable/music"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.141"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>
 
