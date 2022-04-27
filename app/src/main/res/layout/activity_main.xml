@@ -70,16 +70,17 @@
         android:textColor="@color/red"
         android:textSize="24sp"
         android:textStyle="bold" />
-    <TextView
-        android:id="@+id/ageanswer"
-        android:layout_below="@+id/agetitle"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:gravity="left"
-        android:text="She said that she was legal"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ageanswer"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/agetitle"
+            android:layout_marginStart="10dp"
+            android:gravity="left"
+            android:text="She said that she was legal"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
     <TextView
         android:id="@+id/weight"
@@ -269,33 +270,35 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/languages7"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/sunshine"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:src="@drawable/kobobg2" />
+
             <TextView
-                android:layout_gravity="left"
-                android:gravity="left"
-                android:layout_below="@+id/sunshine"
-                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:textSize="14sp"
+                android:layout_below="@+id/sunshine"
+                android:layout_gravity="left"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="20dp"
-                android:text="@string/desc1" />
+                android:gravity="left"
+                android:text="@string/desc1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/lines2"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:layout_below="@+id/japanname"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/gold"
                 android:gravity="center"
                 android:text="---"
@@ -303,25 +306,25 @@
                 android:textSize="5dp" />
 
             <TextView
-                android:layout_gravity="right"
-                android:gravity="right"
-                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:textSize="14sp"
+                android:layout_gravity="right"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="20dp"
-                android:text="@string/desc2" />
+                android:gravity="right"
+                android:text="@string/desc2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:layout_below="@+id/japanname"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/gold"
                 android:gravity="center"
                 android:text="---"
@@ -329,25 +332,25 @@
                 android:textSize="5dp" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="left"
-                android:gravity="left"
-                android:textColor="@color/black"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:textSize="14sp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="20dp"
-                android:text="@string/desc3" />
+                android:gravity="left"
+                android:text="@string/desc3"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:layout_below="@+id/japanname"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/gold"
                 android:gravity="center"
                 android:text="---"
@@ -355,26 +358,26 @@
                 android:textSize="5dp" />
 
             <TextView
-                android:layout_gravity="right"
-                android:gravity="right"
-                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:textSize="14sp"
+                android:layout_gravity="right"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="20dp"
-                android:text="@string/desc4" />
+                android:gravity="right"
+                android:text="@string/desc4"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/charainfoline"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="match_parent"
                 android:layout_below="@+id/japanname"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
+                android:layout_marginBottom="200dp"
                 android:background="@color/gold"
                 android:gravity="center"
                 android:text="---"
@@ -383,22 +386,18 @@
 
 
             <RelativeLayout
-                android:background="@color/darkblue"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_background">
 
-                <ImageView
-                    android:id="@+id/imgbg"
-                    android:layout_width="match_parent"
-                    android:layout_height="410dp"
-                    android:src="@drawable/imgbg2" />
+
                 <TextView
                     android:id="@+id/likes"
-                    android:layout_below="@id/imgbg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/gold"
                     android:text="LIKES"
-                    android:textColor="@color/gold"
+                    android:textColor="@color/black"
                     android:textSize="24sp"
                     android:gravity="center"/>
 
@@ -406,7 +405,6 @@
                     android:id="@+id/meatball"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_below="@+id/imgbg"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="46dp"
                     android:layout_marginEnd="8dp"
@@ -420,7 +418,6 @@
                     android:id="@+id/matcha"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_below="@+id/imgbg"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="71dp"
                     android:layout_marginTop="51dp"
@@ -434,13 +431,13 @@
 
                 <ImageView
                     android:id="@+id/ghost"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_below="@id/meatball"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
+                    android:layout_below="@id/meatball"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:src="@drawable/ghost" />
 
                 <ImageView
@@ -461,13 +458,13 @@
 
                 <ImageView
                     android:id="@+id/cloudd"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_below="@id/ghost"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
+                    android:layout_below="@id/ghost"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:src="@drawable/cloudd" />
 
                 <ImageView
@@ -486,6 +483,328 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+
+                <ImageView
+                    android:id="@+id/wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:layout_below="@+id/music"
+                    android:src="@drawable/wave" />
+
+                <TextView
+                    android:id="@+id/goldline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/wave"
+                    android:background="@color/cream"
+                    android:text="--"
+                    android:textColor="@color/cream"
+                    android:textSize="1sp" />
+
+                <TextView
+                    android:id="@+id/goals"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/goldline"
+                    android:layout_marginStart="30dp"
+                    android:text="GOALS"
+                    android:textColor="@color/cream"
+                    android:textSize="32sp" />
+
+                <ImageView
+                    android:id="@+id/umbrella"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goals"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goals"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="Kayang with 3D model"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal1"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="3D モデルでブリッジしたい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/umbrella2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goal2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="100k subs,500k subs,1mill subs,10mill subs,100mill subs"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal3"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="10万登録者数50万登録者数100万録者数 1000万登録者数 1億突破したい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/umbrella3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goal4"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal4"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="Collab with other VTuber and Youtuber!"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal5"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="他のVTuber YouTuberとコラボしたい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/umbrella4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goal6"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal6"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="Have a proper streaming and recording studio"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal7"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="ちゃんとした配信スタジオや収録スペースを手に入れたい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/umbrella5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goal8"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal8"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="Get a horse"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal9"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="を手に入れたい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/umbrella6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goal10"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal10"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="Go to Japan"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal11"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="日本に行きたい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/umbrella7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goal12"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal12"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="Going inside television"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal13"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="テレビに出たい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/umbrella8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goal14"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal14"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="Voice acting for games and anime"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal15"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="ゲームやアニメの声優を担当したい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/umbrella9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/goal16"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/umbrella" />
+
+                <TextView
+                    android:id="@+id/goal17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal16"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="FAST internet speed"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/goal18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/goal17"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/umbrella"
+                    android:text="ゲームやアニメの声優を担当したい"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
         </LinearLayout>
