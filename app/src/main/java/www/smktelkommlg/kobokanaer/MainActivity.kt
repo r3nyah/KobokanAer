@@ -1,12 +1,15 @@
 package www.smktelkommlg.kobokanaer
 
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.Toast
+import www.smktelkommlg.kobokanaer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var mediaPlayer: MediaPlayer
+    private lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         val mButton8 = findViewById<Button>(R.id.button8)
         val mButton9 = findViewById<Button>(R.id.button9)
 
+        mediaPlayer = MediaPlayer.create(this,R.raw.kobok)
+        mediaPlayer.start()
         var temp = false
         mButton1.setOnClickListener {
             if(!temp){
@@ -48,5 +53,9 @@ class MainActivity : AppCompatActivity() {
             }
             temp = !temp
         }
+    }
+    override fun onBackPressed(){
+        finishAffinity()
+        mediaPlayer.stop()
     }
 }
