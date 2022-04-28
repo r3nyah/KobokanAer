@@ -810,7 +810,7 @@
                 <!-- xxx -->
 
                 <Button
-                    android:layout_marginTop="200dp"
+                    android:layout_marginTop="100dp"
                     android:background="@android:color/transparent"
                     android:id="@+id/button1"
                     android:layout_width="match_parent"
@@ -909,9 +909,120 @@
                     android:layout_below="@id/button7"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="35dp"
+                    android:layout_marginBottom="100dp"
                     android:layout_toRightOf="@id/button8"
                     android:background="@drawable/clouddd"
                     android:text="ASMR" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/button9"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/mamatitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:text="M     A     M     A "
+                        android:textColor="@color/red"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/mama"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/mamatitle"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="150dp"
+                        android:layout_marginBottom="50dp"
+                        android:src="@drawable/ponkan0"
+                        app:civ_border_color="@color/darkblue"
+                        app:civ_border_width="5dp" />
+
+                    <TextView
+                        android:id="@+id/idtwitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/mama"
+                        android:gravity="center"
+                        android:text="/@ponkan_8"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/japanmama"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/idtwitter"
+                        android:gravity="center"
+                        android:text="ぽんかん⑧"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/japanmama"
+                        android:background="@color/lightgray">
+
+                        <TextView
+                            android:id="@+id/papatitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="25dp"
+                            android:gravity="center"
+                            android:text="P     A     P     A "
+                            android:textColor="@color/red"
+                            android:textSize="32dp"
+                            android:textStyle="bold" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/papa"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@id/papatitle"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="150dp"
+                            android:layout_marginRight="150dp"
+                            android:layout_marginBottom="50dp"
+                            android:src="@drawable/otsukue0"
+                            app:civ_border_color="@color/darkblue"
+                            app:civ_border_width="5dp" />
+
+                        <TextView
+                            android:id="@+id/idtwitterpapa"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/papa"
+                            android:gravity="center"
+                            android:text="/@otsukue"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/japanpapa"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/idtwitterpapa"
+                            android:gravity="center"
+                            android:text="おつくえ✍"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>
