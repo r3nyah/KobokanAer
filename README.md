@@ -15,4 +15,9 @@ Virtual Youtuber yang terkait dengan hololive, memulai debutnya dengan menjadi b
 <br>
 
 ### Video :
-Coming soon xd
+
+
+https://user-images.githubusercontent.com/88012298/166109133-828fa1b0-4737-4f69-a0c8-1b642afa4de4.mp4
+
+
+
