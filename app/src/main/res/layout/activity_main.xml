@@ -7,6 +7,8 @@
     android:background="@color/lightblue"
     tools:context=".MainActivity">
 
+
+
     <RelativeLayout
         android:id="@+id/relative"
         android:layout_width="match_parent"
@@ -107,18 +109,18 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/birthdaytitle"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/ageanswer"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:gravity="left"
-        android:text="Birthday"
-        android:textColor="@color/red"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/birthdaytitle"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ageanswer"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="Birthday"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/birthdayanswer"
@@ -401,20 +403,29 @@
                     android:textSize="24sp"
                     android:gravity="center"/>
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/meatball"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="46dp"
                     android:layout_marginEnd="8dp"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxWidth="150dp"
+                    android:maxHeight="150dp"
+                    android:scaleType="fitXY"
                     android:src="@drawable/meatball"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.141"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
+                <ImageButton
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxWidth="150dp"
+                    android:maxHeight="150dp"
+                    android:scaleType="fitXY"
                     android:id="@+id/matcha"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -429,7 +440,11 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
+                <ImageButton
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxWidth="150dp"
+                    android:maxHeight="150dp"
+                    android:scaleType="fitXY"
                     android:id="@+id/ghost"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -440,7 +455,11 @@
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/ghost" />
 
-                <ImageView
+                <ImageButton
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxWidth="170dp"
+                    android:maxHeight="170dp"
+                    android:scaleType="fitXY"
                     android:id="@+id/basketball"
                     android:layout_width="170dp"
                     android:layout_height="170dp"
@@ -456,7 +475,11 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
+                <ImageButton
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxWidth="150dp"
+                    android:maxHeight="150dp"
+                    android:scaleType="fitXY"
                     android:id="@+id/cloudd"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -467,7 +490,11 @@
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/cloudd" />
 
-                <ImageView
+                <ImageButton
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxWidth="170dp"
+                    android:maxHeight="170dp"
+                    android:scaleType="fitXY"
                     android:id="@+id/music"
                     android:layout_width="170dp"
                     android:layout_height="170dp"
