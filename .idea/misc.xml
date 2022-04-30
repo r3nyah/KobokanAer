@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/62822/AndroidStudioProjects/Kobokanaer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1015" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kobokanaer/app/src/main/res/drawable/gradient_background.xml" value="0.1015" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kobokanaer/app/src/main/res/layout/activity_cloud.xml" value="0.25" />
-        <entry key="..\:/Users/62822/AndroidStudioProjects/Kobokanaer/app/src/main/res/layout/activity_main.xml" value="0.15971394517282478" />
+        <entry key="..\:/Users/62822/AndroidStudioProjects/Kobokanaer/app/src/main/res/layout/activity_main.xml" value="0.15" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kobokanaer/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kobokanaer/app/src/main/res/layout/cloud.xml" value="0.11574074074074074" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kobokanaer/app/src/main/res/menu/menu.xml" value="0.25" />

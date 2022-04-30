@@ -15,23 +15,27 @@
         android:layout_height="match_parent" >
 
         <ImageView
+            android:scaleType="centerCrop"
+            android:cropToPadding="true"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_above="@+id/weight"
             android:layout_marginStart="0dp"
             android:layout_toRightOf="@+id/indoname"
             android:src="@drawable/kobokanaer" />
-    <TextView
-        android:layout_marginStart="20dp"
-        android:id="@+id/indoname"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:text=" Kobokan Aeru"
-        android:textColor="@color/red"
-        android:textSize="28dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="100dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <TextView
+            android:fontFamily="@font/robotobold"
+            android:id="@+id/indoname"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:text=" Kobo Kanaeru"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/red"
+            android:textSize="28dp" />
 
     <TextView
         android:id="@+id/japanname"
@@ -59,18 +63,18 @@
             android:textColor="@color/red"
             android:textSize="5dp" />
 
-    <TextView
-        android:id="@+id/agetitle"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/lines"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:gravity="left"
-        android:text="Age"
-        android:textColor="@color/red"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/agetitle"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/lines"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/robotobold"
+            android:gravity="left"
+            android:text="Age"
+            android:textColor="@color/red"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/ageanswer"
@@ -80,34 +84,36 @@
             android:layout_marginStart="10dp"
             android:gravity="left"
             android:text="She said that she was legal"
+            android:fontFamily="@font/robotoregular"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/weight"
-        android:layout_toRightOf="@+id/agetitle"
-        android:layout_below="@+id/lines"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:gravity="left"
-        android:text="Weight"
-        android:textColor="@color/red"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/lines"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/agetitle"
+            android:gravity="left"
+            android:text="Weight"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:fontFamily="@font/robotobold" />
 
-    <TextView
-        android:id="@+id/weightanswer"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/weight"
-        android:layout_marginStart="20dp"
-        android:layout_toRightOf="@+id/ageanswer"
-        android:gravity="left"
-        android:text="40 mg"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/weightanswer"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/weight"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/ageanswer"
+            android:gravity="left"
+            android:text="40 mg"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/birthdaytitle"
@@ -120,7 +126,7 @@
             android:text="Birthday"
             android:textColor="@color/red"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/robotobold"/>
 
         <TextView
             android:id="@+id/birthdayanswer"
@@ -129,23 +135,24 @@
             android:layout_below="@+id/birthdaytitle"
             android:layout_marginStart="10dp"
             android:gravity="left"
+            android:fontFamily="@font/robotoregular"
             android:text="12 December"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/oshimark"
-        android:layout_toRightOf="@+id/birthdaytitle"
-        android:layout_below="@+id/weightanswer"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:gravity="left"
-        android:text="Oshi mark"
-        android:textColor="@color/red"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/oshimark"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/weightanswer"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/birthdaytitle"
+            android:gravity="left"
+            android:text="Oshi mark"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:fontFamily="@font/robotobold" />
 
         <TextView
             android:id="@+id/oshiicon"
@@ -170,7 +177,7 @@
             android:text="height"
             android:textColor="@color/red"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/robotobold"/>
 
         <TextView
             android:id="@+id/heightanswer"
@@ -180,22 +187,23 @@
             android:layout_marginStart="10dp"
             android:gravity="left"
             android:text="150 cm"
+            android:fontFamily="@font/robotoregular"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/language"
-        android:layout_toRightOf="@+id/height"
-        android:layout_below="@+id/oshiicon"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:gravity="left"
-        android:text="Languages"
-        android:textColor="@color/red"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/oshiicon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/height"
+            android:gravity="left"
+            android:text="Languages"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:fontFamily="@font/robotobold" />
 
         <TextView
             android:id="@+id/languages"
@@ -205,20 +213,23 @@
             android:layout_marginStart="20dp"
             android:layout_toRightOf="@+id/heightanswer"
             android:gravity="left"
+            android:fontFamily="@font/robotoregular"
             android:text="Bahasa Indonesia"
             android:textColor="@color/black"
             android:textSize="20sp" />
-    <TextView
-        android:id="@+id/languages3"
-        android:layout_width="200dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/languages"
-        android:layout_marginStart="20dp"
-        android:layout_toRightOf="@+id/heightanswer"
-        android:gravity="left"
-        android:text="English"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/languages3"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/languages"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/heightanswer"
+            android:gravity="left"
+            android:text="English"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/languages4"
@@ -240,6 +251,7 @@
         android:layout_toRightOf="@+id/heightanswer"
         android:gravity="left"
         android:text="HTML"
+        android:fontFamily="@font/robotoregular"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
@@ -252,6 +264,7 @@
             android:layout_toRightOf="@+id/heightanswer"
             android:gravity="left"
             android:text="CSS"
+            android:fontFamily="@font/robotoregular"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -264,6 +277,7 @@
             android:layout_toRightOf="@+id/heightanswer"
             android:gravity="left"
             android:text="JavaScript"
+            android:fontFamily="@font/robotoregular"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -398,10 +412,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/gold"
+                    android:gravity="center"
                     android:text="LIKES"
+                    android:fontFamily="@font/robotobold"
                     android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:gravity="center"/>
+                    android:textSize="24sp" />
 
                 <ImageButton
                     android:id="@+id/meatball"
@@ -511,18 +526,13 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
 
-                <ImageView
-                    android:id="@+id/wave"
-                    android:layout_width="match_parent"
-                    android:layout_height="420dp"
-                    android:layout_below="@+id/music"
-                    android:src="@drawable/wave" />
 
                 <TextView
+                    android:layout_marginTop="100dp"
                     android:id="@+id/goldline"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@id/wave"
+                    android:layout_below="@id/music"
                     android:background="@color/cream"
                     android:text="--"
                     android:textColor="@color/cream"
@@ -965,10 +975,10 @@
                         android:layout_below="@id/mamatitle"
                         android:layout_marginStart="150dp"
                         android:layout_marginLeft="150dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="25dp"
                         android:layout_marginEnd="150dp"
                         android:layout_marginRight="150dp"
-                        android:layout_marginBottom="50dp"
+                        android:layout_marginBottom="25dp"
                         android:src="@drawable/ponkan0"
                         app:civ_border_color="@color/darkblue"
                         app:civ_border_width="5dp" />
@@ -979,7 +989,7 @@
                         android:layout_height="match_parent"
                         android:layout_below="@+id/mama"
                         android:gravity="center"
-                        android:text="/@ponkan_8"
+                        android:text="@string/ponkan_8"
                         android:textSize="20sp"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
@@ -1018,10 +1028,10 @@
                             android:layout_below="@id/papatitle"
                             android:layout_marginStart="150dp"
                             android:layout_marginLeft="150dp"
-                            android:layout_marginTop="50dp"
+                            android:layout_marginTop="25dp"
                             android:layout_marginEnd="150dp"
                             android:layout_marginRight="150dp"
-                            android:layout_marginBottom="50dp"
+                            android:layout_marginBottom="25dp"
                             android:src="@drawable/otsukue0"
                             app:civ_border_color="@color/darkblue"
                             app:civ_border_width="5dp" />
@@ -1032,7 +1042,7 @@
                             android:layout_height="match_parent"
                             android:layout_below="@+id/papa"
                             android:gravity="center"
-                            android:text="/@otsukue"
+                            android:text="@string/otsukue"
                             android:textSize="20sp"
                             android:textColor="@color/black"
                             android:textStyle="bold" />
@@ -1055,7 +1065,9 @@
                             android:layout_height="match_parent"
                             android:background="@color/white">
 
+
                             <TextView
+                                android:layout_marginTop="50dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left"
@@ -1066,6 +1078,7 @@
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginStart="15dp"/>
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left"
@@ -1076,6 +1089,7 @@
                                 android:layout_marginStart="15dp"/>
 
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="right"
@@ -1087,6 +1101,7 @@
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginStart="15dp"/>
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="right"
@@ -1101,6 +1116,7 @@
 
 
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left"
@@ -1111,6 +1127,7 @@
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginStart="15dp"/>
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left"
@@ -1121,6 +1138,7 @@
                                 android:layout_marginStart="15dp"/>
 
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="right"
@@ -1132,6 +1150,7 @@
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginStart="15dp"/>
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="right"
@@ -1145,6 +1164,7 @@
 
 
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left"
@@ -1155,6 +1175,7 @@
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginStart="15dp"/>
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left"
@@ -1165,6 +1186,7 @@
                                 android:layout_marginStart="15dp"/>
 
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="right"
@@ -1176,6 +1198,7 @@
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginStart="15dp"/>
                             <TextView
+                                android:layout_marginTop="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="right"
@@ -1184,7 +1207,8 @@
                                 android:textSize="24sp"
                                 android:textColor="@color/black"
                                 android:layout_marginEnd="15dp"
-                                android:layout_marginStart="15dp"/>
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="50dp"/>
 
                         </LinearLayout>
                     </RelativeLayout>
