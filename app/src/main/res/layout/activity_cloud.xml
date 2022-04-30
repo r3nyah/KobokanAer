@@ -4,10 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@color/white"
     tools:context=".Cloud">
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_background"
         android:layout_height="wrap_content">
         <ImageView
             android:layout_width="match_parent"
@@ -81,5 +88,138 @@
             android:layout_marginTop="100dp"
             android:id="@+id/mantrahujan" />
     </FrameLayout>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logokobok"/>
+        <TextView
+            android:id="@+id/desc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/desc5"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/darkblue" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" Contact"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@color/darkblue"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Call my name 12 times gently with all your heart 💖" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" Working Hours"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@color/darkblue"
+            android:drawableLeft="@drawable/ic_baseline_access_time_24"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Weekdays" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="08:00 - 11:00" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="13:00 - 17:00" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/title1"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@color/darkblue"
+            android:drawableLeft="@drawable/ic_baseline_umbrella_24"/>
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Only dispance dense cloud to certain places"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/darkblue"
+            android:drawableLeft="@drawable/ic_baseline_remove_24"/>
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please provide sufficent space(10-meter radius)for the rain shaman to cast her spells"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/darkblue"
+            android:drawableLeft="@drawable/ic_baseline_remove_24"/>
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No touching touching Kobo`s umbrella"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/darkblue"
+            android:drawableLeft="@drawable/ic_baseline_remove_24"/>
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rain related request only!"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/darkblue"
+            android:drawableLeft="@drawable/ic_baseline_remove_24"/>
+    </LinearLayout>
+
+
 
 </ScrollView>
